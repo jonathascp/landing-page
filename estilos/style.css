@@ -14,12 +14,67 @@
 }
 
 body,html {
+    width: 100%;
+    height: 100%;
     background-color: var(--cor-primaria);
-    
 }
 
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em 6.25em;
+    border-bottom: .3px solid var(--cor-secundaria);
+}
+
+.cabecalho_titulo {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    font-size: 1.6rem;
+
+}
+.cabecalho ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.cabecalho li {
+    list-style: none;
+}
+
+.cabecalho span {
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #2c57b1;
+    transition: color .3s;
+}
+
+.botao-principal {
+   text-decoration: none;
+   background-color: var(--cor-secundaria);
+   padding: 10px;
+   border-radius: 20px;
+   color: var(--cor-primaria);
+   font-weight: bold;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.43);
+}
+
+.botao-principal:hover {
+    color: #2c57b1;
+    transition: color .3s;
+}
+
+
 .corpo {
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,57 +105,7 @@ body,html {
 }
 
 .imagem {
-    width: 24.37em;
-}
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: .3px solid var(--cor-secundaria);
-    padding: 1.25em 6.25em ;
-}
-
-.cabecalho_titulo {
-    font-weight: 600;
-    color: var(--cor-secundaria);
-    font-size: 1.6rem;
-
-}
-.cabecalho ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
-}
-
-.cabecalho li {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-weight: bold;
-}
-
-.link:hover {
-    color: #2c57b1;
-    transition: color .3s;
-}
-
-.botao-principal {
-   text-decoration: none;
-   background-color: var(--cor-secundaria);
-   padding: 10px;
-   border-radius: 20px;
-   color: var(--cor-primaria);
-   font-weight: bold;
-   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.43);
-}
-
-.botao-principal:hover {
-    color: #2c57b1;
-    transition: color .3s;
+    width: 40%;
 }
 
 .texto-rodape {
