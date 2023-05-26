@@ -18,7 +18,7 @@
         display: none;
     }
 
-    header span {
+    header #menu {
         display: block;
         color: #fff;
         cursor: pointer;
@@ -34,6 +34,7 @@
     }
 
     .coluna-principal {
+        width: 100%;
         gap: 20px;
     }
 
